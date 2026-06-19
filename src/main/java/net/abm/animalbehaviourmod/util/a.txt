@@ -1,0 +1,40 @@
+
+=======
+Estructura Mixin escalado dimensiones
+=======
+
+BigBee/
+├── build.gradle
+├── settings.gradle
+└── src/main/
+    ├── java/com/bigbeemod/
+    │   ├── BigBeeMod.java              ← Clase principal del mod
+    │   ├── client/
+    │   │   └── ModBeeRenderer.java     ← Escala visual (modelo 3D)
+    │   ├── events/
+    │   │   └── ClientEvents.java       ← Registra el renderer
+    │   └── mixin/
+    │       └── BeeEntityMixin.java     ← Modifica hitbox real
+    └── resources/
+        ├── mixins.bigbeemod.json       ← Config del mixin
+        └── META-INF/
+            └── neoforge.mods.toml     ← Metadatos del mod
+
+
+=====
+Uso de Ticks
+======
+
+@Override
+public void tick() {
+    // Actualizar posición
+    this.move();
+
+    // Aplicar efectos
+    this.updateStatusEffects();
+
+    // Ejecutar lógica personalizada
+    if (this.isOnFire()) {
+        this.damage(1);
+    }
+}

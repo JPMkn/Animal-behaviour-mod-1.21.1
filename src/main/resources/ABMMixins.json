@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.abm.animalbehaviourmod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "entity.size.ABMMobSizeMixin",
+    "entity.bee.ABMBeeModelMixin",
+    "particle.ABMBeePollenMixin",
+    "particle.ABMNectarDropParticleMixin",
+    "entity.ABMMinecartSoundMixin",
+    "blockentity.ABMBeehiveBlockEntityMixin",
+    "accessor.ParticleAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
