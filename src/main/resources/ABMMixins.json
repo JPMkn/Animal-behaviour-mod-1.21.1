@@ -7,6 +7,7 @@
     "entity.size.ABMMobSizeMixin",
     "entity.bee.ABMBeeModelMixin",
     "particle.ABMBeePollenMixin",
+    "blockentity.ABMBeehiveBlockEntityMixin",
     "particle.ABMNectarDropParticleMixin",
     "entity.ABMMinecartSoundMixin",
     "blockentity.ABMBeehiveBlockEntityMixin",
